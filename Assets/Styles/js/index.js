@@ -227,7 +227,7 @@ function generateQuestions() {
   // Créer les objets questions
   questions = selectedLetters.map((letter) => ({
     letter: letter,
-    question: `Nommez un pays (de la liste fournie) qui commence par la lettre : '${letter}'`,
+    question: `Nommez un pays qui commence par : '${letter}'`,
   }));
 }
 
