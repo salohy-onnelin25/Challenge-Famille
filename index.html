@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Géographie Game | Quiz de Géographie en Ligne et Jeu Éducatif</title>
+
+    <meta
+      name="description"
+      content="Testez vos connaissances en géographie avec notre jeu de quiz en ligne rapide ! Répondez à 5 défis de pays, capitales et plus. Jeu éducatif et amusant."
+    />
+    <meta
+      name="keywords"
+      content="géographie, jeu, quiz, pays, capitales, éducatif, en ligne, défi"
+    />
+
+    <meta property="og:title" content="Géographie Game : Le Défi Ultime !" />
+    <meta
+      property="og:description"
+      content="Jeu de quiz de géographie amusant et rapide. 5 questions, 10 secondes par lettre."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.ionos.fr/tools/analyse-site-web"
+    />
+    <meta
+      property="og:image"
+      content="[Lien vers une image attrayante pour le jeu]"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Imgs/469218025_2867263606757805_2181642583290175945_n.jpg"
+    />
+    <link rel="stylesheet" href="./Assets/Styles/index.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="half-circle"></div>
+      <h1>Géographie Game</h1>
+
+      <div class="progress-bar">
+        <div class="progress" id="quiz-progress"></div>
+      </div>
+
+      <div id="intro-section">
+        <p>
+          Préparez-vous à répondre à 5 défis géographiques, 10 secondes par
+          lettre.
+        </p>
+        <button id="start-button" onclick="startGame()">Commencer</button>
+      </div>
+
+      <div class="quiz-section" id="quiz-section">
+        <div class="question-card">
+          <div id="timer">10</div>
+          <p id="question-text">Question...</p>
+        </div>
+
+        <input
+          type="text"
+          id="answer-input"
+          placeholder="Écrivez votre réponse ici..."
+          disabled
+        />
+        <button id="submit-button" onclick="checkAnswer()" disabled>
+          Valider (10 Points)
+        </button>
+
+        <div id="result-message"></div>
+        <div id="score-display">
+          Score: <span id="current-score">0</span> / 50
+        </div>
+      </div>
+
+      <div id="game-over-message">
+        <h2>Partie Terminée !</h2>
+        <p>Bravo, vous avez terminé le quiz.</p>
+        <p id="final-score">Votre score final est de 0/50.</p>
+        <button
+          id="restart-button"
+          onclick="resetGame()"
+          class="mt-4 p-3 bg-primary-color text-white font-bold rounded-lg shadow-md hover:bg-secondary-color transition"
+        >
+          Rejouer
+        </button>
+      </div>
+    </div>
+
+    <script src="./Assets/Styles/js/index.js"></script>
+  </body>
+</html>
