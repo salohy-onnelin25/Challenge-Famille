@@ -49,8 +49,8 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 10vw;
-  height: 10vw;
+  width: 80px;
+  height: 80px;
   background: url(../Imgs/469218025_2867263606757805_2181642583290175945_n.jpg) center/cover;
   border-radius: 50%;
   z-index: 1;
@@ -62,7 +62,7 @@ h1 {
   font-family: var(--font-display);
   color: var(--primary-color);
   font-size: clamp(1.2rem, 3vw, 3rem);
-  margin-bottom: 20px;
+  margin: 20px 0;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
